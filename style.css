@@ -1,0 +1,5 @@
+* {
+--font-display: 'Fredoka', system-ui, -apple-system, sans-serif;
+    font-family: var(--font-display);
+    font-weight: 700;
+}
