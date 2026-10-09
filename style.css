@@ -13,14 +13,58 @@ body {
     padding: 10px;
 }
 
-header{
-
-}
-
-footer{
-
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #fff;
+    padding: 10px;
+    margin-top: 10px;
 }
 .logo-img {
-    width: 300px;
+    width: 550px;
     height: auto;
+    margin-left: 15px;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.text {
+    grid-row: span 5 / span 5;
+    border: 10px solid #fff;
+}
+
+.title {
+    grid-column: span 4 / span 4;
+    border: 10px solid #fff;
+    height: 200px;
+}
+
+.img {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border: 10px solid #fff;
+}
+
+.content {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    border: 10px solid #fff;
+}
+
+.poep {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
 }
