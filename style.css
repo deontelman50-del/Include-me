@@ -68,3 +68,13 @@ footer {
     flex-direction: column;
     height: 100%;
 }
+
+.aboutus-title {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutus-text {
+    display: flex;
+    padding: 20px;
+}
