@@ -102,12 +102,11 @@ footer {
     border-radius: 10px;
 }
 
-/* ai test*/
 .title {
     grid-column: span 4 / span 4;
     border: 10px solid #fff;
     height: 200px;
-    position: relative; /* nodig om de knop rechtsboven te zetten */
+    position: relative;
 }
 
 .lang-button {
