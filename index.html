@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -63,30 +64,6 @@
         <p data-nl="© 2024 Include Me. Alle rechten voorbehouden."
             data-en="© 2024 Include Me. All rights reserved.">© 2024 Include Me. Alle rechten voorbehouden.</p>
     </footer>
-
-    <script>
-        const toggle = document.getElementById('lang-toggle');
-        let lang = localStorage.getItem('lang') || 'nl';
-
-        function setLanguage(newLang) {
-            lang = newLang;
-            document.documentElement.lang = lang;
-
-            document.querySelectorAll('[data-nl]').forEach(el => {
-                el.textContent = el.dataset[lang];
-            });
-
-            // De knop toont de taal waar je naartoe wisselt
-            toggle.textContent = lang === 'nl' ? 'EN' : 'NL';
-            localStorage.setItem('lang', lang);
-        }
-
-        toggle.addEventListener('click', () => {
-            setLanguage(lang === 'nl' ? 'en' : 'nl');
-        });
-
-        setLanguage(lang);
-    </script>
 </body>
 
 </html>
