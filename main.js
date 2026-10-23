@@ -1,4 +1,4 @@
-        const toggle = document.getElementById('lang-toggle');
+        const toggle = document.getElementById('NL/EN');
         let lang = localStorage.getItem('lang') || 'nl';
 
         function setLanguage(newLang) {
