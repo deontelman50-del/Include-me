@@ -9,7 +9,6 @@
                 el.textContent = el.dataset[lang];
             });
 
-            // De knop toont de taal waar je naartoe wisselt
             toggle.textContent = lang === 'nl' ? 'EN' : 'NL';
             localStorage.setItem('lang', lang);
         }
